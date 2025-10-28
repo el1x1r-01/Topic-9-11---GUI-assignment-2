@@ -34,7 +34,7 @@
             this.lblMin = new System.Windows.Forms.Label();
             this.lblMiddle = new System.Windows.Forms.Label();
             this.lblInstructions = new System.Windows.Forms.Label();
-            this.lblTempGuyStatus = new System.Windows.Forms.Label();
+            this.lblTempDegrees = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgTempGuy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTemperature)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +42,7 @@
             // imgTempGuy
             // 
             this.imgTempGuy.BackColor = System.Drawing.Color.Transparent;
-            this.imgTempGuy.Image = global::Topic_9_11___GUI_assignment_2.Properties.Resources.Temperature_guy;
+            this.imgTempGuy.Image = global::Topic_9_11___GUI_assignment_2.Properties.Resources.Temperature_guy___Chilly;
             this.imgTempGuy.Location = new System.Drawing.Point(527, 12);
             this.imgTempGuy.Name = "imgTempGuy";
             this.imgTempGuy.Size = new System.Drawing.Size(330, 586);
@@ -102,22 +102,23 @@
             // lblInstructions
             // 
             this.lblInstructions.BackColor = System.Drawing.Color.Transparent;
-            this.lblInstructions.Font = new System.Drawing.Font("Snap ITC", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructions.Font = new System.Drawing.Font("MV Boli", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstructions.Location = new System.Drawing.Point(19, 12);
             this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(329, 225);
+            this.lblInstructions.Size = new System.Drawing.Size(329, 164);
             this.lblInstructions.TabIndex = 5;
             this.lblInstructions.Text = "Select a temperature using the slider";
             // 
-            // lblTempGuyStatus
+            // lblTempDegrees
             // 
-            this.lblTempGuyStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblTempGuyStatus.Font = new System.Drawing.Font("Snap ITC", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTempGuyStatus.Location = new System.Drawing.Point(19, 451);
-            this.lblTempGuyStatus.Name = "lblTempGuyStatus";
-            this.lblTempGuyStatus.Size = new System.Drawing.Size(329, 147);
-            this.lblTempGuyStatus.TabIndex = 6;
-            this.lblTempGuyStatus.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblTempDegrees.AutoSize = true;
+            this.lblTempDegrees.BackColor = System.Drawing.Color.Transparent;
+            this.lblTempDegrees.Font = new System.Drawing.Font("Times New Roman", 64.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTempDegrees.Location = new System.Drawing.Point(12, 176);
+            this.lblTempDegrees.Name = "lblTempDegrees";
+            this.lblTempDegrees.Size = new System.Drawing.Size(224, 123);
+            this.lblTempDegrees.TabIndex = 7;
+            this.lblTempDegrees.Text = "0°C";
             // 
             // FormTemperatureGauge
             // 
@@ -125,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(857, 610);
-            this.Controls.Add(this.lblTempGuyStatus);
+            this.Controls.Add(this.lblTempDegrees);
             this.Controls.Add(this.lblInstructions);
             this.Controls.Add(this.lblMiddle);
             this.Controls.Add(this.lblMin);
@@ -149,7 +150,7 @@
         private System.Windows.Forms.Label lblMin;
         private System.Windows.Forms.Label lblMiddle;
         private System.Windows.Forms.Label lblInstructions;
-        private System.Windows.Forms.Label lblTempGuyStatus;
+        private System.Windows.Forms.Label lblTempDegrees;
     }
 }
 

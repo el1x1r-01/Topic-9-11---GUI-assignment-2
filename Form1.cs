@@ -20,7 +20,7 @@ namespace Topic_9_11___GUI_assignment_2
         private void FormTemperatureGauge_Load(object sender, EventArgs e)
         {
             trackBarTemperature.Value = 0;
-            //FormTemperatureGauge.BackgroundImage = Properties.Resources.Neutral;
+            this.BackgroundImage = Properties.Resources.Neutral;
         }
 
         private void trackBarTemperature_ValueChanged(object sender, EventArgs e)
@@ -28,12 +28,13 @@ namespace Topic_9_11___GUI_assignment_2
 
         }
 
+        int temperature;
+
         private void trackBarTemperature_Scroll(object sender, EventArgs e)
         {
             if (trackBarTemperature.Value >= 85)
             {
                 imgTempGuy.Image = Properties.Resources.Temperature_guy___Burnt_to_a_crisp;
-                lbl
             }
             else if (trackBarTemperature.Value >= 65 && trackBarTemperature.Value <= 85)
             {
@@ -55,11 +56,11 @@ namespace Topic_9_11___GUI_assignment_2
             {
                 imgTempGuy.Image = Properties.Resources.Temperature_guy;
             }
-            else if (trackBarTemperature.Value <= -5 && trackBarTemperature.Value >= 10)
+            else if (trackBarTemperature.Value >= -10 && trackBarTemperature.Value <= 10)
             {
                 imgTempGuy.Image = Properties.Resources.Temperature_guy___Chilly;
             }
-            else if (trackBarTemperature.Value <= -5 && trackBarTemperature.Value >= -50)
+            else if (trackBarTemperature.Value <= -10 && trackBarTemperature.Value >= -50)
             {
                 imgTempGuy.Image = Properties.Resources.Temperature_guy___Cold;
             }
@@ -67,6 +68,9 @@ namespace Topic_9_11___GUI_assignment_2
             {
                 imgTempGuy.Image = Properties.Resources.Temperature_guy___Frozen;
             }
+
+            temperature = trackBarTemperature.Value;
+            lblTempDegrees.Text = temperature.ToString() + "°C";
         }
     }
 }
